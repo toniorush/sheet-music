@@ -1,13 +1,20 @@
 \header {
-  title = "Untitled"
-  composer = "Composer"
+  title = "Arpèges ré mineur"
+  composer = "Rushforth"
 }
 
 symbols = {
   \key d \minor
-    \time 3/4
-    r4
-    <d f a>4. <a>8 <d g bes e'>4 <cis g a e'>4. e'8 <d f a f'>4  
+    \time 4/4
+    \set TabStaff.minimumFret = #5
+    \set TabStaff.restrainOpenStrings = ##t
+    g16 d' e' bes' 
+    \set TabStaff.minimumFret = #2
+    f16 a d' a' 
+    \set TabStaff.minimumFret = #0
+    e16 g cis' g' 
+    \set TabStaff.restrainOpenStrings = #1
+    d16 a d' f' 
   }
 
 
