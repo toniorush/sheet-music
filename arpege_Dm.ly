@@ -8,24 +8,28 @@ symbols = {
     \time 4/4
     \set TabStaff.minimumFret = #5
     \set TabStaff.restrainOpenStrings = ##t
-    g16 d' e' bes' 
+    g16 d' e' d' bes' e' d' e'
     \set TabStaff.minimumFret = #2
-    f16 a d' a' 
+    f16 a d' a a' d' a d' 
     \set TabStaff.minimumFret = #0
-    e16 g cis' g' 
+    e16 g cis' g g' cis' g cis' 
     \set TabStaff.restrainOpenStrings = #1
-    d16 a d' f' 
+    d16 a d' a f' d' a d' 
 
+    \set TabStaff.restrainOpenStrings = #1
+    d1
 
     \set TabStaff.minimumFret = #9
     \set TabStaff.restrainOpenStrings = ##t
-    g16 d' e' bes' 
+    g16 d' e' d' bes' e' d' e'
     \set TabStaff.minimumFret = #7
-    f16 a d' a' 
+    f16 a d' a a' d' a d' 
     \set TabStaff.minimumFret = #5
-    e16 g cis' g' 
-    d16 a d' f' 
+    e16 g cis' g g' cis' g cis' 
+    d16 a d' a f' d' a d' 
 
+    \set TabStaff.restrainOpenStrings = #5
+    d1
   }
 
 
