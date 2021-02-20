@@ -2,17 +2,24 @@
   title = "Untitled"
   composer = "Composer"
 }
-\score {
-\new PianoStaff <<
-  \new Staff = "up" {
-  \override Staff.TimeSignature #'stencil = ##f 
-    \voiceOne
-    
-    <e b gis' d''>1
+
+
+symbols = {
+  \key a \minor
+    \time 4/4
+    \set TabStaff.minimumFret = #0
+    \set TabStaff.restrainOpenStrings = ##t
+    <e, b, gis d'>1
   }
 
->>
 
+\score {
+  <<
+    \new Staff { \clef "G_8" \symbols }
+
+    \new TabStaff { \symbols }
+  >>
   \layout {}
   \midi {}
+
 }
