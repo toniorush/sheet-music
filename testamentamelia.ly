@@ -38,7 +38,7 @@ symbols = {
      { \symbols }
      >>
   >>
-  \layout {}
+  \layout  {indent = 0\cm}
   \midi {}
 
 }
