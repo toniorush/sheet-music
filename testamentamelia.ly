@@ -26,7 +26,32 @@ symbols = {
     < a cis' g'>1
     <d f a>1
     <d f a>1
+    \break
+    \key c \minor
+    \transpose d c {
+    <d f a>1 ^\markup "en do mineur"
+    <c' fis ees' a>1
+    <bes e cis g>1
+    <d a f>1
+    <bes f' gis' d'>1
+    < a cis' g'>1
+    <d f a>1
+    <d f a>1
+    }
+\break
+        \key a \minor
+    \transpose d a {
+    <d f a>1 ^\markup "en la mineur"
+    <c' fis ees' a>1
+    <bes e cis g>1
+    <d a f>1
+    <bes, f gis d>1
+    < a cis' g'>1
+    <d f a>1
+    <d f a>1
+    }
   }
+  
 
 
 \score {
