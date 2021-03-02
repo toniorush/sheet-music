@@ -17,6 +17,15 @@ symbols = {
     <a, a cis' g'>1
     <d, f a d'>1
     <d, f a d'>1
+    \break
+    <d f a>1
+    <c' fis ees' a>1
+    <bes e cis g>1
+    <d a f>1
+    <bes f' gis d'>1
+    < a cis' g'>1
+    <d f a>1
+    <d f a>1
   }
 
 
