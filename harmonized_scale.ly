@@ -4,6 +4,7 @@ symbols = {
 \time 7/1 
 \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
 \set Staff.printKeyCancellation = ##f
+\set minorChordModifier = \markup { "-" }
 \key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>
 \break \transpose c f   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
 \break \transpose c bes {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
@@ -29,8 +30,8 @@ symbols = {
 \score
 {
     <<
-        \new ChordNames {  \symbols }
-        \new Staff \with {  \omit TimeSignature } { \clef "treble_8" \symbols }
+        \new ChordNames  {  \symbols }
+     \new Staff \with {  \omit TimeSignature } { \clef "treble_8" \symbols }
     >>
     \layout {  \omit Staff.StringNumber }
 }
