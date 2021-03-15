@@ -5,17 +5,17 @@ symbols = {
 \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
 \set Staff.printKeyCancellation = ##f
 \key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>
-\break \transpose c f {\key c \major <c e g b>1 d e f g a b}
-\break \transpose c bes {\key c \major c1 d e f g a b}
-\break \transpose c ees {\key c \major c1 d e f g a b}
-\break \transpose c aes {\key c \major c1 d e f g a b}
-\break \transpose c des {\key c \major c1 d e f g a b}
-\break \transpose c ges {\key c \major c1 d e f g a b}
-\break \transpose c b {\key c \major c1 d e f g a b}
-\break \transpose c e {\key c \major c1 d e f g a b}
-\break \transpose c a {\key c \major c1 d e f g a b}
-\break \transpose c d {\key c \major c1 d e f g a b}
-\break \transpose c g {\key c \major c1 d e f g a b}
+\break \transpose c f   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c bes {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c ees {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c aes {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c des {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c ges {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c b   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c e   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c a   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c d   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
+\break \transpose c g   {\key c \major <c e g b>1 <d f a c'> <e g b d'> <f a c' e'> <g b d' f'> <a c' e' g'> <b d' f' a'>}
 }	      
 \paper
 {
@@ -28,6 +28,9 @@ symbols = {
 }
 \score
 {
-    \new Staff \with {  \omit TimeSignature } { \clef "treble_8" \symbols }
+    <<
+        \new ChordNames {  \symbols }
+        \new Staff \with {  \omit TimeSignature } { \clef "treble_8" \symbols }
+    >>
     \layout {  \omit Staff.StringNumber }
 }
