@@ -78,11 +78,21 @@ symbolsA={
 
 }
 
+\paper
+{
+    indent=0\mm
+   line-width=120\mm
+   oddFooterMarkup=##f
+   oddHeaderMarkup=##f
+   bookTitleMarkup = ##f
+   scoreTitleMarkup = ##f
+}
+
 \score 
 { 
   \layout {  \omit Staff.StringNumber } 
 
-  << \new Staff { \clef "treble_8" \symbolsA } 
+  << \new Staff  \with {  \omit TimeSignature }  { \clef "treble_8" \symbolsA } 
   \new TabStaff 
     << 
     \set TabStaff.stringTunings = #guitar-tuning 
