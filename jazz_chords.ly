@@ -92,7 +92,15 @@ symbolsA={
 { 
   \layout {  \omit Staff.StringNumber } 
 
-  << \new Staff  \with {  \omit TimeSignature }  { \clef "treble_8" \symbolsA } 
+  <<
+   \new ChordNames  {  \chordmode { 
+    c1 c:maj7 c:m7 c:m7.5-
+     c1 c:maj7 c:m7 c:m7.5-
+      c1 c:maj7 c:m7 c:m7.5-
+       c1 c:maj7 c:m7 c:m7.5-
+  }
+   }
+   \new Staff  \with {  \omit TimeSignature }  { \clef "treble_8" \symbolsA } 
   \new TabStaff 
     << 
     \set TabStaff.stringTunings = #guitar-tuning 
