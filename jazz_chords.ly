@@ -36,9 +36,43 @@ symbolsA={
 <c\5 bes\3 ees'\2 g'\1>1
 ^\markup { \fret-diagram #"6-x;5-3;4-x;3-3;2-4;1-3;"}
  \bar "||"
-<c\5 bes\3 ees'\2 g'\1>1
-^\markup { \fret-diagram #"6-x;5-3;4-x;3-3;2-4;1-3;"}
+<c\5 bes\3 ees'\2 ges'\1>1
+^\markup { \fret-diagram #"6-x;5-3;4-x;3-3;2-4;1-2;"}
  \bar "||"
+
+\break
+
+<c\5 bes\3 e'\2 g\4>1
+^\markup { \fret-diagram #"6-x;5-3;4-5;3-3;2-5;1-x;"}
+ \bar "||"
+<c\5 b\3 e'\2 g\4>1
+^\markup { \fret-diagram #"6-x;5-3;4-5;3-4;2-5;1-x;"}
+ \bar "||"
+<c\5 bes\3 ees'\2 g\4>1
+^\markup { \fret-diagram #"6-x;5-3;4-5;3-3;2-4;1-x;"}
+ \bar "||"
+<c\5 bes\3 ees'\2 ges\4>1
+^\markup { \fret-diagram #"6-x;5-3;4-4;3-3;2-4;1-x;"}
+ \bar "||"
+
+\break
+
+<c'\4 bes'\2 e''\1 g'\3>1
+^\markup { \fret-diagram #"6-x;5-x;4-10;3-12;2-11;1-12;"}
+ \bar "||"
+<c'\4 b'\2 e''\1 g'\3>1
+^\markup { \fret-diagram #"6-x;5-x;4-10;3-12;2-12;1-12;"}
+ \bar "||"
+<c'\4 bes'\2 ees''\1 g'\3>1
+^\markup { \fret-diagram #"6-x;5-x;4-10;3-12;2-11;1-11;"}
+<c'\4 bes'\2 ees''\1 ges'\3>1
+^\markup { \fret-diagram #"6-x;5-x;4-10;3-11;2-11;1-11;"}
+ \bar "||"
+
+
+
+
+
 
 
 
