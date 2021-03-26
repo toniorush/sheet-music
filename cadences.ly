@@ -17,7 +17,7 @@ symbols = {
     \break
     <g, b d' f>1^\markup "Cadence rompue"
     <a, c' c' e>1
-
+  << { g, a, }  \\ {f e} \\ { b c' } \\ { d' c' } >>
   }
 
 
@@ -27,6 +27,6 @@ symbols = {
 
     \new TabStaff { \symbols }
   >>
-  \layout { indent = 0\mm ragged-last = ##t  line-width = 150\mm}
+  \layout { indent = 0\mm ragged-last = ##t }
   \midi {}
 }  
