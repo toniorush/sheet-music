@@ -94,10 +94,10 @@ symbolsA={
 
   <<
    \new ChordNames  {  \chordmode { 
-    c1 c:maj7 c:m7 c:m7.5-
-     c1 c:maj7 c:m7 c:m7.5-
-      c1 c:maj7 c:m7 c:m7.5-
-       c1 c:maj7 c:m7 c:m7.5-
+    c:7 1 c:maj7 c:m7 c:m7.5-
+     c:7 1 c:maj7 c:m7 c:m7.5-
+      c:7 1 c:maj7 c:m7 c:m7.5-
+       c:7 1 c:maj7 c:m7 c:m7.5-
   }
    }
    \new Staff  \with {  \omit TimeSignature }  { \clef "treble_8" \symbolsA } 
